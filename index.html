@@ -1,0 +1,132 @@
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<title>First website</title>
+		<style>
+			body {
+				background: url('img/white_wall.png');
+				font-size: 18px;
+			}
+			#title {
+				font-family: "French Script MT", cursive;
+				/*A name in quotes is the font name from your computer, it's best to have a backup in case other computer's don't have this font */
+				font-size: 3em;
+				/*3em as a font size means it will be 3x the size of the font-size specified in the body section, which is 18px, so title ID is 18*3 = 54px. */
+			} 
+			#Purpose {
+				color: rgb(150, 33, 13);
+			}
+			p {
+				color: green;
+				text-align: left;
+				font-weight: bold;
+			}
+			li {
+				color: rgb(116, 109, 0);
+				margin-left: 20px;
+				text-align: left;
+				line-height: 1.5em;
+			}
+
+			h1 {
+				background-color: white,
+			}
+			.notes {
+				color: red;
+				}
+				
+			.wrap {
+				margin: 0 auto;
+				/*background: yellow;*/
+				width: 960px;
+				text-align: center;
+
+			}
+			ul, ol {
+				list-style-position: inside;
+				
+			}
+			.torah {
+				width: 450px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<h1 id="title"> Amichai's Page</h1>
+			<img class="torah" src="http://www.jewishpress.com/wp-content/uploads/13th-century-Torah-scroll.jpg" alt="torah scroll"> 
+			<h2 id="Purpose">The Purpose</h2>
+			<p>
+				This page is going to be a place where I can practice building a website, it will contain different features such as links to shiurim, knowledge bases, and <em>whatever</em> else I decide. <br><br>
+				Some sites I'm going to learn from are going to be: <br> 
+				<ul>
+					<a target="_blank" href="https://www.freecodecamp.org/"><li>FreeCodeCamp</li></a>
+					<a target="_blank" href="https://www.khanacademy.org"><li>KhanAcademy</li></a>
+					<a target="_blank" href="https://www.w3schools.com"><li>W3 Schools</li></a>
+				</ul>
+			</p>
+			<p>
+				After learning HTML, there are other languages I will want to learn in order to advance in development such as:
+				<ol>
+					<li><a href="#CSS">CSS</li></a>
+					<li><a href="#JavaScript">JavaScript</a></li>
+					<li><a href="#Python">Python</a></li>
+				</ol>
+			</p>
+			<h1 id="CSS"> Enter CSS </h1>
+			<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0afZj1G0BIE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<h2 class="notes">Notes for CSS</h2>
+			<p> To start writing CSS we must open a style element in the head element section. CSS properties are written there.
+				<br><br>
+				To target all HTML categories, simply put the HTML tag without the angle  brackets < > in the style section, following by squiggly brackets { } and within the squiggly brackets you will add the commands
+				<br><br>
+				To target a specific section, add an ID to the HTML tag (such as p id="" for a paragraph) and in the style section, you can set the CSS coding to that particular id by using the hashtag # to call the ID such as the heading of this paragraph (ID's are case sensitive, and must be unique, and therefore can only be used once). ID's can be very useful for linking with in a page
+				<br><br>
+				To format a group of things one can create a <em>class</em>. Classes are created in the style section using a "." and are created just like ID's only "class" is written instead. For example, the first points of each list is formatted using a class.
+			</p>
+			<h1 id="JavaScript"> JavaScript </h1>
+			<h2 class="notes"> Notes for JavaScript</h2>
+			<p>This is the section where I will write some notes for JavaScript.
+
+			</p>
+			<h1 id="Python"> Python </h1>
+			<h2 class="notes"> Notes for Python</h2>
+			<p>This is the section wher I will write some notes for Python</p>
+
+			<!-- This is how to make a table, 
+				table: sets the table
+				thead: determines item is the table's header
+				tr: indicates table row
+				th: is the table header item
+				tbody: determines beginning of the table body
+				td: is the table data -->
+			<table>
+				<thead>
+					<tr>
+						<th>Pet Name</th>
+						<th>Species</th>
+						<th>Color</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Black & White</td>
+						<td>Rabbit</td>
+						<td>Black & White</td>
+					</tr>
+					<tr>
+						<td>Daemon</td>
+						<td>Cat</td>
+						<td>Black</td>
+					</tr>
+					<tr>
+						<td>Angel</td>
+						<td>Cat</td>
+						<td>Orange</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</body>
+</html>
