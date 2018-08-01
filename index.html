@@ -7,11 +7,21 @@
 				background: url('img/white_wall.png');
 				font-size: 18px;
 			}
+			.bsd{
+				text-align: right;
+				background-color: #cc0000;
+				color: white;
+			}
 			#title {
 				font-family: "French Script MT", cursive;
 				/*A name in quotes is the font name from your computer, it's best to have a backup in case other computer's don't have this font */
 				font-size: 3em;
 				/*3em as a font size means it will be 3x the size of the font-size specified in the body section, which is 18px, so title ID is 18*3 = 54px. */
+				background-color: #cc0000;
+				color: #fff;
+				padding: 20px;
+				padding-top: 0;
+				margin: 0;
 			} 
 			#Purpose {
 				color: rgb(150, 33, 13);
@@ -20,11 +30,17 @@
 				color: green;
 				text-align: left;
 				font-weight: bold;
+				margin-left: 10px;
+			}
+			#sources {
+				text-align: center;
+				clear: left;
+				padding-top: 10px;
 			}
 			li {
 				color: rgb(116, 109, 0);
 				margin-left: 20px;
-				text-align: left;
+				text-align: center;
 				line-height: 1.5em;
 			}
 
@@ -40,29 +56,46 @@
 				/*background: yellow;*/
 				width: 960px;
 				text-align: center;
-
+				border: 6px solid #cc0000;
 			}
 			ul, ol {
 				list-style-position: inside;
 				
 			}
-			.torah {
+			.computer {
 				width: 450px;
+				float: left;
+				padding-right: 15px;
+			}
+			.source-sites {
+				display: inline-block;
+				margin-top: 0
+			}
+			table, th, td {
+				border: 1px solid black;
+				margin: auto;
+			}
+			td {
+				text-align: center
 			}
 		</style>
 	</head>
 	<body>
 		<div class="wrap">
+			<div class="bsd">בס"ד</div>
 			<h1 id="title"> Amichai's Page</h1>
-			<img class="torah" src="http://www.jewishpress.com/wp-content/uploads/13th-century-Torah-scroll.jpg" alt="torah scroll"> 
+			<img class="computer" src="img/cartoon-computer.jpg" alt="computer"> 
 			<h2 id="Purpose">The Purpose</h2>
 			<p>
-				This page is going to be a place where I can practice building a website, it will contain different features such as links to shiurim, knowledge bases, and <em>whatever</em> else I decide. <br><br>
+				This page is going to be a place where I can practice building a website, it will contain different features such as links to shiurim, knowledge bases, and <em>whatever</em> else I decide. </p>
+			<p id= "sources">
 				Some sites I'm going to learn from are going to be: <br> 
-				<ul>
+				<ul class="source-sites">
 					<a target="_blank" href="https://www.freecodecamp.org/"><li>FreeCodeCamp</li></a>
 					<a target="_blank" href="https://www.khanacademy.org"><li>KhanAcademy</li></a>
 					<a target="_blank" href="https://www.w3schools.com"><li>W3 Schools</li></a>
+					<a target="_blank" href="https://www.codecademy.com/"><li>Codecademy</li></a>
+
 				</ul>
 			</p>
 			<p>
@@ -86,12 +119,27 @@
 			</p>
 			<h1 id="JavaScript"> JavaScript </h1>
 			<h2 class="notes"> Notes for JavaScript</h2>
-			<p>This is the section where I will write some notes for JavaScript.
+			<p>
+				JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
+			</p><p>
+				Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web. JavaScript enables interactive web pages and thus is an essential part of web applications. The vast majority of websites use it, and all major web browsers have a dedicated JavaScript engine to execute it.
+			</p><p>
+				As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded.
+			</p><p>
+				Initially only implemented client-side in web browsers, JavaScript engines are now embedded in many other types of host software, including server-side in web servers and databases, and in non-web programs such as word processors and PDF software, and in runtime environments that make JavaScript available for writing mobile and desktop applications, including desktop widgets.
+			</p><p>
+				Although there are strong outward similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design; JavaScript was influenced by programming languages such as Self and Scheme.
 
 			</p>
 			<h1 id="Python"> Python </h1>
 			<h2 class="notes"> Notes for Python</h2>
-			<p>This is the section wher I will write some notes for Python</p>
+			<p>
+				Python is an interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales.[25] In July 2018, Van Rossum stepped down as the leader in the language community after 30 years.
+			</p><p>
+				Python features a dynamic type system and automatic memory management. It supports multiple programming paradigms, including object-oriented, imperative, functional and procedural, and has a large and comprehensive standard library.
+			</p><p>
+				Python interpreters are available for many operating systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of Python's other implementations. Python and CPython are managed by the non-profit Python Software Foundation. 
+			</p>
 
 			<!-- This is how to make a table, 
 				table: sets the table
@@ -100,29 +148,29 @@
 				th: is the table header item
 				tbody: determines beginning of the table body
 				td: is the table data -->
-			<table>
+			<table style="width: 40%">
 				<thead>
 					<tr>
-						<th>Pet Name</th>
-						<th>Species</th>
-						<th>Color</th>
+						<th>Language</th>
+						<th>Focus</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>Black & White</td>
-						<td>Rabbit</td>
-						<td>Black & White</td>
+						<td>HTML</td>
+						<td>Structure</td>
 					</tr>
 					<tr>
-						<td>Daemon</td>
-						<td>Cat</td>
-						<td>Black</td>
+						<td>CSS</td>
+						<td>Design</td>
 					</tr>
 					<tr>
-						<td>Angel</td>
-						<td>Cat</td>
-						<td>Orange</td>
+						<td>JavaScript</td>
+						<td>Interactibility</td>
+					</tr>
+					<tr>
+						<td>Python</td>
+						<td>General Purpose</td>
 					</tr>
 				</tbody>
 			</table>
